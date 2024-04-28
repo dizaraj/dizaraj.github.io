@@ -81,10 +81,11 @@ h2::after {
 
 #services .card {
     transition: transform .2s;
+    margin-bottom: 5px;
 }
 
 #services .card:hover {
-    transform: scale(1.08);
+    transform: scale(0.98);
 }
 
 .service-card {
