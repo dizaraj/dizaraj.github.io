@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <!-- Google tag (gtag.js) -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F70ZE4KD6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -62,7 +63,7 @@
             <div class="carousel-item active">
                 <img class="d-block w-100 bg-light" src="img/cover_blue.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>I'm a Web Developer</h3>
+                    <h3>I'm a <span id="typewrittter"></span></h3>
                     <p class="ls-5">Any project In mind?</p>
                     <a href="#contact" class="btn btn-primary">Contact Me</a>
                 </div>
@@ -72,7 +73,7 @@
     </div>
 
     <!-- About Section -->
-    <div id="about" class="container p-5 mt-5 mb-5 bg-light text-dark rounded-2">
+    <div id="about" class="container p-5 mt-5 mb-2 bg-light text-dark rounded-2">
         <h2 class="mb-3">About Me</h2>
         <p class="lead poppins-thin">
             I am Dizaraj Dey, a passionate web developer with experience in HTML, CSS, Bootstrap, PHP, Javascript,
@@ -84,10 +85,10 @@
     </div>
     <!-- skill set -->
     <div class="skills">
-        <div class="container">
+        <div class="container py-2 my-md-2 my-lg-2 my-xl-3">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Skill Set</h2>
+                    <h3><b>Skill</b> Set</h3>
                     <div class="skillbar" data-percent="90%">
                         <div class="skillbar-title">HTML</div>
                         <div class="skill-bar-percent float-right">90%</div>
@@ -197,8 +198,8 @@
         </div>
     </div>
     <!-- Service Section -->
-    <div id="services" class="container pt-5 pb-5">
-        <h2>Services I Provide</h2>
+    <div id="services" class="container py-2 my-md-2 my-lg-2 my-xl-3">
+        <h3><b>Services</b> I Provide</h3>
         <div class="row">
             <!-- Service 1 -->
             <div class="col-md-4 col-6">
@@ -286,8 +287,8 @@
 
 
     <!-- Project Section -->
-    <div id="projects" class="container">
-        <h2>Projects I Have Completed</h2>
+    <div id="projects" class="container py-2 my-md-2 my-lg-2 my-xl-3">
+        <h3>Projects I Have <b>Completed</b></h3>
         <div class="row">
             <!-- Project 1 -->
             <div class="col-md-3">
@@ -458,10 +459,10 @@
     <div id="contact" class="container pt-5">
         <div class="row">
             <!-- Contact Information -->
-            <h2>Have a project in mind?</h2>
-            <h3 class="text-body fs-lg pb-3 mb-3">Get in Touch</h3>
+            <h3 class="pt-2 letKnow"> <span> Have a project in mind? </span></h3>
+            <!-- <h3 class="text-body fs-lg pb-3 mb-3">Get in Touch</h3> -->
             <!-- <p>Fill out the form</p> -->
-            <div class="container">
+            <div class="container py-4 my-md-2 my-lg-2 my-xl-3">
                 <form onsubmit="sendMail(); reset(); return false">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -479,8 +480,8 @@
                 </form>
             </div>
 
-            <h3 class="pt-5 letKnow"> <span>Or let me know</span></h3>
-            <div class="container py-5 my-md-2 my-lg-2 my-xl-3">
+            <h3 class="pt-2 letKnow"> <span>Or let me know</span></h3>
+            <div class="container py-4 my-md-2 my-lg-2 my-xl-3">
                 <div class="row justify-content-center pb-1 pb-sm-2 pb-md-3">
                     <div class="col-12 pt-sm-2 pt-md-3">
                         <div class="d-sm-flex">

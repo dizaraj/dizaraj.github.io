@@ -25,3 +25,21 @@ function sendMail() {
     Body: emailBody,
   }).then((message) => alert(message));
 }
+
+var app = document.getElementById("typewrittter");
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .typeString("Web Developer")
+  .pauseFor(300)
+  .deleteChars(13)
+  .typeString("Front End Developer")
+  .pauseFor(300)
+  .deleteChars(19)
+  .typeString('<span style="color: #27ae60;">WordPress</span> Developer')
+  .pauseFor(1000)
+  .start();
