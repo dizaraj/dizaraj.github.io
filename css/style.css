@@ -13,10 +13,14 @@ body {
 
 #home {
     background-color: #343a40;
+    margin-bottom: -150px;
+    z-index: -1;
 }
 
 #home h3 {
     font-size: 80px !important;
+    margin-bottom: 0;
+
 }
 
 #home p {
@@ -24,7 +28,7 @@ body {
 }
 
 .carousel-item {
-    max-height: 100vh;
+    max-height: 70vh;
     background: no-repeat center bottom scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -55,9 +59,19 @@ h2::after {
     border-radius: 5px;
 }
 
-.card h5 {
+.card-img-top {
+min-height: 400px;
+max-height: 400px;
+/* height: 300px; */
+object-fit: cover;
+object-position: top;
+}
+
+.card p {
     position: absolute;
     top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0.75);
     width: calc(100% - 6px);
@@ -243,15 +257,22 @@ h2::after {
     color: white !important;;
 }
 
+#contact h4{
+    text-align: center;
+}
+
 .letKnow span {
     background: #343a40;
     padding: 0 10px;
+    text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {
     #about {
         background-color: #343a40 !important;
         color: #f8f9fa !important;
+        /* margin-top: -200px; */
+        /* z-index: 1; */
     }
 
     #home h3,
@@ -277,4 +298,23 @@ h2::after {
     #home h3 {
         font-size: 50px !important;
     }
+}
+
+.btn{
+border-radius: 4px;
+}
+
+.btn-custom{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+#contact form{
+    width: 75%;
+    margin: 0 auto;
 }

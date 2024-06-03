@@ -23,7 +23,7 @@ function sendMail() {
     From: "dizaraj@gmail.com",
     Subject: "Email from Portfolio Site",
     Body: emailBody,
-  }).then((message) => alert(message));
+  }).then((message) => alert("Your mail sent successfully. "+message));
 }
 
 var app = document.getElementById("typewrittter");
