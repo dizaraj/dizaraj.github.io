@@ -1,3 +1,5 @@
+/* @import url("https: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"); */
+
 * {
     box-sizing: border-box;
 }
@@ -36,6 +38,12 @@ body {
     background-size: fill;
 }
 
+a{
+text-decoration: none;
+color: #1f1f1f;
+font-weight: 600;
+}
+
 h2,
 h3 {
     text-transform: uppercase;
@@ -60,11 +68,11 @@ h2::after {
 }
 
 .card-img-top {
-min-height: 400px;
-max-height: 400px;
-/* height: 300px; */
-object-fit: cover;
-object-position: top;
+    min-height: 400px;
+    max-height: 400px;
+    /* height: 300px; */
+    object-fit: cover;
+    object-position: top;
 }
 
 .card p {
@@ -121,6 +129,10 @@ object-position: top;
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0f0f0f;
 }
 
 .carousel-caption {
@@ -254,10 +266,11 @@ object-position: top;
     border-bottom: 1px solid #343a40;
     line-height: 0.1em;
     margin: 10px 0 10px;
-    color: white !important;;
+    color: white !important;
+    ;
 }
 
-#contact h4{
+#contact h4 {
     text-align: center;
 }
 
@@ -300,11 +313,11 @@ object-position: top;
     }
 }
 
-.btn{
-border-radius: 4px;
+.btn {
+    border-radius: 4px;
 }
 
-.btn-custom{
+.btn-custom {
     background-color: #0f0f0f;
     color: white;
 }
@@ -314,7 +327,11 @@ border-radius: 4px;
     color: white;
 }
 
-#contact form{
+#contact form {
     width: 75%;
     margin: 0 auto;
+}
+
+footer i{
+font-size: 1.5em;
 }
