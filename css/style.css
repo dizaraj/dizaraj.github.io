@@ -15,9 +15,7 @@ body {
     background-color: #343a40;
     margin-bottom: -150px;
     position: relative;
-    /* Uncomment this line */
     z-index: 1;
-    /* Set a lower z-index */
 }
 
 #home h3 {
@@ -200,9 +198,7 @@ margin-left: 10px;
     color: #f8f9fa !important;
     border-radius: 4px;
     position: relative;
-    /* Uncomment this line */
     z-index: 2;
-    /* Set a higher z-index */
 }
 
 @media only screen and (max-width: 425px) {
