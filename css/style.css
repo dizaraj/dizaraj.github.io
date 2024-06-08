@@ -14,7 +14,8 @@ body {
 #home {
     background-color: #343a40;
     margin-bottom: -150px;
-    z-index: -1;
+    position: relative;
+    z-index: 1;
 }
 
 #home h3 {
@@ -196,7 +197,8 @@ margin-left: 10px;
     background-color: #343a40 !important;
     color: #f8f9fa !important;
     border-radius: 4px;
-    /* z-index: 1; */
+    position: relative;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 425px) {
