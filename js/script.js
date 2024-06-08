@@ -41,3 +41,24 @@ typewriter
   .typeString('<span style="color: #27ae60;">WordPress</span> Developer')
   .pauseFor(1000)
   .start();
+
+  window.onload = function () {
+    Particles.init({
+      selector: ".background",
+    });
+  };
+  const particles = Particles.init({
+    selector: ".background",
+    color: ["#03dac6", "#ff0266", "#343a40"],
+    connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          color: ["#faebd7", "#03dac6", "#ff0266"],
+          maxParticles: 43,
+          connectParticles: false,
+        },
+      },
+    ],
+  });

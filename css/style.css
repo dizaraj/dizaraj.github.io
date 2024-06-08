@@ -130,7 +130,7 @@ h2::after {
     background-color: #343a40;
 }
 
-.navbar-brand, .navbar-nav .nav-link {
+.navbar-brand, .navbar-nav .nav-link, .navbar-brand:hover {
     color: #ffffff;
 }
 
@@ -234,6 +234,10 @@ margin-left: 10px;
     color: white;
 }
 
+.btn-bordered{
+    border: 2px solid #374e65;
+}
+
 .btn-custom:hover {
     background-color: #ff0000;
     color: white;
@@ -256,4 +260,18 @@ footer a {
 
 #projects h3 span {
     color: #ff0000;
+}
+
+.background{
+    max-height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000000;
+}
+
+.particles{
+min-height: 70vh;
+height: 100%;
 }

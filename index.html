@@ -23,6 +23,7 @@
     <!-- Google tag (gtag.js) -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-6F70ZE4KD6"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -69,15 +70,15 @@
         <div class="carousel-inner">
             <!-- carousel item one -->
             <div class="carousel-item active">
-                <img class="d-block w-100 bg-light" src="img/cover_blue.webp" alt="First slide">
+                <div class="particles"></div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="overflow-hidden">I'm a <span id="typewrittter"></span></h1>
                     <p class="ls-5">Any project In mind?</p>
-                    <a href="#contact" class="btn btn-custom">Contact Me</a>
+                    <a href="#contact" class="btn btn-custom btn-bordered">Contact Me</a>
                 </div>
             </div>
         </div>
-
+        <canvas class="background"></canvas>
     </section>
 
     <!-- About Section -->
