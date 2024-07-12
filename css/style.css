@@ -101,12 +101,13 @@ h2::after {
     height: 100%;
 }
 
-#services .card {
+#services .card, #projects .card {
     transition: transform .2s;
     margin-bottom: 5px;
 }
 
-#services .card:hover {
+#services .card:hover,
+#projects .card:hover {
     transform: scale(0.98);
 }
 
