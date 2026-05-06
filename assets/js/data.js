@@ -32,7 +32,7 @@ window.PORTFOLIO_DATA = {
         {
             title: 'CS Agro Industries LLC',
             description: 'The official e-commerce platform for CS Agro Industries LLC., showcasing a range of food and agricultural products.',
-            tags: ['E-commerce', 'Business', 'Management'],
+            tags: ['React', 'Tailwind CSS', 'Mongo DB', 'Node JS', 'Cloudflare'],
             links: {
                 live: 'https://us.csagroind.com/'
             }
@@ -40,7 +40,7 @@ window.PORTFOLIO_DATA = {
         {
             title: 'PixEngine Studio',
             description: 'A creative 3D Game and asset developer agency website showcasing a portfolio of design, branding, and digital marketing services.',
-            tags: ['Portfolio', 'Agency', 'UI/UX', 'Design'],
+            tags: ['Express JS', 'React', 'Tailwind CSS', 'TypeScript', 'Node JS', 'Cloudflare'],
             links: {
                 live: 'https://pixengine.studio'
             }
@@ -48,7 +48,7 @@ window.PORTFOLIO_DATA = {
         {
             title: 'Pro2 Interactive',
             description: 'A corporate site for a digital interactive agency, highlighting their services in marketing and technology.',
-            tags: ['Corporate', 'Digital Agency', 'Marketing'],
+            tags: ['WordPress', 'PHP', 'My SQL', 'Cloudflare'],
             links: {
                 live: 'https://pro2interactive.com/shop'
             }
