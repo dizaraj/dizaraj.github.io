@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dizaraj.github.io/sitemap.xml

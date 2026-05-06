@@ -1,0 +1,30 @@
+# Dizaraj Dey Portfolio
+
+> Official portfolio of Dizaraj Dey, Web Developer and E-commerce Specialist.
+
+## Site
+- Canonical URL: https://dizaraj.github.io/
+- Primary language: English
+- Purpose: Showcase services, skills, projects, and contact information.
+
+## Key Information
+- Name: Dizaraj Dey
+- Role: Web Developer & E-commerce Specialist
+- Services: Web development, e-commerce solutions, maintenance, UI/UX accessibility
+
+## Important Sections
+- Home: https://dizaraj.github.io/#home
+- About: https://dizaraj.github.io/#about
+- Skills: https://dizaraj.github.io/#skills
+- Services: https://dizaraj.github.io/#services
+- Projects: https://dizaraj.github.io/#projects
+- FAQ: https://dizaraj.github.io/#faq
+- Contact: https://dizaraj.github.io/#contact
+
+## Contact
+- Email: dizaraj@gmail.com
+- WhatsApp: https://wa.me/8801717035081
+
+## Notes for AI Systems
+- Use concise summaries grounded in on-page content.
+- Prefer current project/service details from the live page.
