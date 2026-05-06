@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const setupScrollEffects = () => {
         const revealTargets = document.querySelectorAll(
-            'section h2, #about p, #services .grid > div, #skills-grid > div, #projects-grid > div, #faq-list > details, #contact .max-w-2xl, footer .container'
+            'section h2, #about p, #services .grid > div, #skills-grid > div, #projects-grid > div, #faq-list > details, #contact .contact-grid > div'
         );
 
         revealTargets.forEach((el, index) => {
