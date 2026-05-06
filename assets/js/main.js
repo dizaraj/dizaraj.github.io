@@ -1,13 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     // --- Elements ---
-    const html = document.documentElement;
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.querySelector('.menu-icon');
     const xIcon = document.querySelector('.x-icon');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-    const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
-    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
     const contactForm = document.getElementById('contact-form');
     const submitButton = document.getElementById('submit-button');
     const statusMessage = document.getElementById('status-message');
@@ -20,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- State ---
     let isMenuOpen = false;
-    let darkMode = true; // Default to dark
     let isHelpWidgetOpen = false;
 
     // --- Functions ---
@@ -206,28 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Function to set the theme
-    const applyTheme = () => {
-        if (darkMode) {
-            html.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            themeToggleDesktop.innerHTML = '<i data-lucide="sun" size="20"></i>';
-            themeToggleMobile.innerHTML = '<i data-lucide="sun" size="20"></i>';
-        } else {
-            html.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            themeToggleDesktop.innerHTML = '<i data-lucide="moon" size="20"></i>';
-            themeToggleMobile.innerHTML = '<i data-lucide="moon" size="20"></i>';
-        }
-        lucide.createIcons(); // Re-render icons
-    };
-
-    // Function to toggle the theme
-    const toggleTheme = () => {
-        darkMode = !darkMode;
-        applyTheme();
-    };
-
     // Function to handle form submission
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -275,20 +249,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize Lucide icons
     lucide.createIcons();
 
-    // Check for saved theme preference or system preference
-    if (localStorage.getItem('theme') === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        darkMode = true;
-    } else {
-        darkMode = false;
-    }
-    applyTheme();
-
     // --- Event Listeners ---
-    menuButton.addEventListener('click', toggleMenu);
-    themeToggleDesktop.addEventListener('click', toggleTheme);
-    themeToggleMobile.addEventListener('click', toggleTheme);
-    contactForm.addEventListener('submit', handleFormSubmit);
+    if (menuButton) {
+        menuButton.addEventListener('click', toggleMenu);
+    }
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleFormSubmit);
+    }
     if (helpToggle) {
         helpToggle.addEventListener('click', () => toggleHelpWidget());
     }
