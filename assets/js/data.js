@@ -38,6 +38,14 @@ window.PORTFOLIO_DATA = {
             }
         },
         {
+            title: 'Gears For Ears',
+            description: 'An e-commerce website focused on premium audio gear, earphones, headphones, and music accessories for audiophiles and tech enthusiasts.',
+            tags: ['Shopify', 'E-commerce', 'Online Audio Store'],
+            links: {
+                live: 'https://gearsforears.com/'
+            }
+        },
+        {
             title: 'PixEngine Studio',
             description: 'A creative 3D Game and asset developer agency website showcasing a portfolio of design, branding, and digital marketing services.',
             tags: ['Express JS', 'React', 'Tailwind CSS', 'TypeScript', 'Node JS', 'Cloudflare'],
